@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kilogram"
+        android:textSize="20dp"
+        android:textColor="#9A15B1"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="3dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/ic_post"
+        android:layout_weight="3"
+        android:scaleType="centerCrop"
+        android:padding="16dp"/>
+    <Button
+        android:id="@+id/selectImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:textCursorDrawable="@drawable/ic_addstory"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="selectImage" />
+
+    <Button
+        android:id="@+id/uploadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/upload"
+        android:onClick="uploadPost"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_postactivity"
+            android:id="@+id/ivPostActivity"
+            android:onClick="openPostActivity"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_searchactivity"
+            android:id="@+id/ivSearchActivity"
+            android:onClick="openSearchActivity"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_uploadactivity"
+            android:id="@+id/iv_UploadActivity"
+            android:onClick="openUploadActivity"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_profileactivity"
+            android:id="@+id/iv_ProfileActivity"
+            android:onClick="openProfileActivity"/>
+    </LinearLayout>
+</LinearLayout>

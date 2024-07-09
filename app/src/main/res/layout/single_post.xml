@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#65E1BF58"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background=""
+        >
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_profilepic"
+        android:id="@+id/ivProfilePic"
+        />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/tvUsername"
+
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="10dp"
+           android:textSize="18dp"
+           android:textStyle="bold"
+           />
+
+        <ImageView
+            android:id="@+id/deletethepost"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_delete"
+            android:layout_marginEnd="-159dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        />
+
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="415dp"
+        android:id="@+id/ivPost"
+        android:src="@drawable/ic_postpic"
+        android:background="#F4B353"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_like"
+        android:id="@+id/ivLike"
+        android:layout_margin="6dp"
+        />
+        <!--        ic_dislike for dislike pic-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_comment"
+            android:id="@+id/ivComment"
+            android:layout_margin="6dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_share"
+            android:id="@+id/ivShare"
+            android:layout_margin="6dp"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "824636640839",
+    "firebase_url": "https://killogram-7-default-rtdb.firebaseio.com",
+    "project_id": "killogram-7",
+    "storage_bucket": "killogram-7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824636640839:android:f6841335fcef98e6aaab62",
+        "android_client_info": {
+          "package_name": "com.example.projectinsta"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTSRIaSRuUDjKX5jsORXQHqNwRmkV_NmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

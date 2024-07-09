@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#2D9C27B0"
+
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kilogram"
+        android:textSize="20dp"
+        android:textColor="#9A15B1"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="3dp"
+        android:textStyle="bold"
+        android:background=""
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="2dp"
+        android:background="#2CE91E63"
+        >
+        <ImageView
+            android:id="@+id/imageViewProfile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_profilepic"
+            />
+
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="1dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+       tools:listitem="@layout/single_post"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_postactivity"
+            android:layout_weight="1"
+            android:id="@+id/ivPostActivity"
+        />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_searchactivity"
+            android:layout_weight="1"
+            android:id="@+id/ivSearchActivity"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_uploadactivity"
+            android:id="@+id/iv_UploadActivity"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_profileactivity"
+            android:id="@+id/iv_ProfileActivity"
+            />
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
