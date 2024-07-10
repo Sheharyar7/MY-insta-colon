@@ -5,31 +5,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Kilogram"
-        android:textSize="20dp"
+        android:text="@string/kilogram"
+        android:textSize="20sp"
         android:textColor="#9A15B1"
         android:layout_marginTop="3dp"
         android:layout_marginStart="3dp"
         android:textStyle="bold"
-        android:background=""
-        />
+        android:background="" />
+
     <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/searchEditText"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:textColor="@color/white"
         android:background="@color/black"
-        android:hint="Search..."
+        android:hint="@string/search"
         android:textColorHint="@color/white"
         android:layout_marginStart="3dp"
         android:layout_marginEnd="3dp"
-        android:padding="3dp"
-        />
+        android:padding="3dp" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/userRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -37,41 +38,50 @@
         android:layout_marginEnd="3dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="8dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/item_layout"
-        />
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/imageRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="3" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/black"
-        >
+        android:background="@color/black">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_postactivity"
             android:layout_weight="1"
-            android:id="@+id/ivPostActivity"
-            />
+            android:id="@+id/ivPostActivity" />
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_searchactivity"
             android:layout_weight="1"
-            android:id="@+id/ivSearchActivity"
-            />
+            android:id="@+id/ivSearchActivity" />
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:src="@drawable/ic_uploadactivity"
-            android:id="@+id/iv_UploadActivity"
-            />
+            android:id="@+id/iv_UploadActivity" />
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:src="@drawable/ic_profileactivity"
-            android:id="@+id/iv_ProfileActivity"
-            />
+            android:id="@+id/iv_ProfileActivity" />
     </LinearLayout>
 </LinearLayout>

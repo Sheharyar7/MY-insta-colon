@@ -4,15 +4,19 @@ public class Post {
     private String postId;
     private String userId;
     private String imageUrl;
+    private String username;
+    private String profilePicUrl;
 
     public Post() {
         // Default constructor required for Firebase
     }
 
-    public Post(String postId, String userId, String imageUrl) {
+    public Post(String postId, String userId, String imageUrl, String username, String profilePicUrl) {
         this.postId = postId;
         this.userId = userId;
         this.imageUrl = imageUrl;
+        this.username = username;
+        this.profilePicUrl = profilePicUrl;
     }
 
     public String getPostId() {
@@ -37,5 +41,21 @@ public class Post {
 
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getProfilePicUrl() {
+        return profilePicUrl;
+    }
+
+    public void setProfilePicUrl(String profilePicUrl) {
+        this.profilePicUrl = profilePicUrl;
     }
 }

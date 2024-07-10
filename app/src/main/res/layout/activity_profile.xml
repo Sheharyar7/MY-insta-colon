@@ -6,9 +6,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFEB3B"
+    android:background=""
     tools:context=".ProfileActivity">
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kilogram"
+        android:textSize="20dp"
+        android:textColor="#9A15B1"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="3dp"
+        android:textStyle="bold"
+        android:background=""
+        />
     <!-- Profile Header and Bio Section -->
     <LinearLayout
         android:id="@+id/layoutProfile"
@@ -35,7 +45,7 @@
             android:clickable="true"
             android:focusable="true"
             android:onClick="onBioClick"
-            android:paddingTop="16dp" />
+            android:paddingTop="10dp" />
 
         <TextView
             android:id="@+id/tvPostCount"

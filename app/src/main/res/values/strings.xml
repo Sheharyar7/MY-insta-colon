@@ -108,4 +108,7 @@
     <string name="upload">Upload</string>
     <string name="kilogram">Kilogram</string>
     <string name="forgot_password">forgot Password</string>
+    <string name="select_image">Select Image</string>
+    <string name="search">Search...</string>
+    <string name="username">Username</string>
 </resources>

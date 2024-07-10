@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Kilogram"
+        android:text="@string/kilogram"
         android:textSize="20dp"
         android:textColor="#9A15B1"
         android:layout_marginTop="3dp"
@@ -26,7 +26,7 @@
         android:id="@+id/selectImageButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select Image"
+        android:text="@string/select_image"
         android:textCursorDrawable="@drawable/ic_addstory"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
